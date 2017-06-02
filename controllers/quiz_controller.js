@@ -240,7 +240,7 @@ exports.randomcheck = function (req, res, next) {
 	req.session.quizzes= [-1];
     }
 
-    res.render('quizzes/randomresult', {
+    res.render('quizzes/random_result', {
 	score: req.session.score,        
 	quiz: req.quiz,
         result: result,
