@@ -10,7 +10,7 @@
 
         <% if (session.user) { %>
 
-        <% if (accepted || isAdmin || isQuizAuthor) { %>
+        <% if (accepted || isAdmin || isQuizAuthor || isTipAuthor) { %>
 
             <li>
                 <%= tip.text %>
