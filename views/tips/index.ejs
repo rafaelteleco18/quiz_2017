@@ -14,6 +14,7 @@
 
             <li>
                 <%= tip.text %>
+                <span id="autor"><small> (by <%= tip.Author ? tip.Author.username : "nosé" %>) </small></span>
 
                 <% if (!accepted && (isAdmin || isQuizAuthor)) { %>
 
@@ -31,8 +32,8 @@
 
                 <% } %>
              </li>
-         <% } %>
-          <span id="autor"><small> (by <%= tip.Author ? tip.Author.username : "nosé" %>) </small></span>
-          <% } %>
+         
+          
+         
     <% } %>
 </ul>
